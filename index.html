@@ -52,12 +52,12 @@
       });
       //how would you call the second method?  Give it a shot.  Check out the answer below (answer 2.)
 
-
       //now to give it a whirl, we 'instantiate' an instance of the class we have defined above:
       var myNewMessage = new Message();
 
       //and then we make a change on that model
       myNewMessage.set({message: 'someMessage'});
+      myNewMessage.alertThisMessage();
 
 
       //so far we have created models by extending Backbone.Model and we have gone over event listeners for models.  We have also touched on some of the usefulness of understanding what prototypes are, how they work, and their relation to .extend.  Finally, we have touched on creating a template for a given model (in this case a message).  However, doing it as a method can take a long time, and get a bit messy, so in the next section, we will look into how Backbone deals with these 'templates'.  The templating, as well as a bunch of other useful methods are wrapped up into Backbone.View.
